@@ -34,4 +34,64 @@ answers = [
   "Maths",
   "English",
 ]
+#set score to 0
+score = 0
+
+
+# Loop through each question
+for i in range(len(questions)):
+    # Ask the current question
+    print("\nQuestion", i + 1)
+    time.sleep(0.5)
+    answer = input(questions[i] + ": ")
+    
+    # Check the answer
+    if answer.lower() == answers[i].lower():
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect.") 
+    time.sleep(0.5)
+
+print("\nYour score is:",score, "out of",len(questions))
+  
+if score == len(questions):
+  print("Congradulations, you got 10 out of 10")
+elif score>= len(questions) /2:
+  print("Well done you completed the quiz!")
+
+else:
+  print("Better luck next time!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
