@@ -35,6 +35,7 @@ answers = [
   "English",
 ]
 #set score to 0
+
 score = 0
 
 
@@ -52,7 +53,7 @@ for i in range(len(questions)):
     else:
         print("Incorrect.") 
     time.sleep(0.5)
-
+#print finale message
 print("\nYour score is:",score, "out of",len(questions))
   
 if score == len(questions):
@@ -62,36 +63,3 @@ elif score>= len(questions) /2:
 
 else:
   print("Better luck next time!")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
