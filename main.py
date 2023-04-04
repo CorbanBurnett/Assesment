@@ -55,11 +55,3 @@ for i in range(len(questions)):
     time.sleep(0.5)
 #print finale message
 print("\nYour score is:",score, "out of",len(questions))
-  
-if score == len(questions):
-  print("Congradulations, you got 10 out of 10")
-elif score>= len(questions) /2:
-  print("Well done you completed the quiz!")
-
-else:
-  print("Better luck next time!")
